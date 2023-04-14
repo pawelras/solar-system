@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden!important;
+}
+
 canvas {
   position: fixed;
   top: 0;
@@ -22,6 +26,7 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
+  
   
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -97,3 +102,8 @@ canvas {
   .float {
     animation: float 4s ease-in-out infinite;
   }
+
+  /* ::-webkit-scrollbar {
+    position: fixed;
+    left: 0
+  } */

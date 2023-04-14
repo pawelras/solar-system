@@ -58,10 +58,10 @@ function addStar() {
 
 }
 
-Array(100).fill().forEach(addStar);
+Array(200).fill().forEach(addStar);
 
 // Background
-const spaceTexture = new THREE.TextureLoader().load('space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('8k_stars_milky_way.jpg');
 scene.background = spaceTexture;
 
 
@@ -99,7 +99,7 @@ mercury.position.z = 5;
 
 
 // Venus
-const venusGeometry = new THREE.SphereGeometry(2, 32, 32);
+const venusGeometry = new THREE.SphereGeometry(1.5, 32, 32);
 const venusTexture = new THREE.TextureLoader().load('8k_venus_surface.jpg');
 const venusMaterial = new THREE.MeshStandardMaterial({
   map: venusTexture,
@@ -113,7 +113,7 @@ venus.position.z = 12;
 
 // Earth
 const earthNormal = new THREE.TextureLoader().load('normal.jpg');
-const earthGeometry = new THREE.SphereGeometry(2.5, 32, 32);
+const earthGeometry = new THREE.SphereGeometry(3, 32, 32);
 const earthTexture = new THREE.TextureLoader().load('8k_earth_daymap.jpg');
 const earthMaterial = new THREE.MeshStandardMaterial({
   map: earthTexture,
@@ -126,22 +126,81 @@ earth.position.x = 6;
 earth.position.z = 25;
 
 // Moon
-// const moonNormal = new THREE.TextureLoader().load('normal.jpg');
-// const moonGeometry = new THREE.SphereGeometry(2, 32, 32);
-// const moonTexture = new THREE.TextureLoader().load('8k_moon.jpg');
-// const moonMaterial = new THREE.MeshStandardMaterial({
-//   map: moonTexture,
-//   normalMap:  moonNormal  
+const moonNormal = new THREE.TextureLoader().load('normal.jpg');
+const moonGeometry = new THREE.SphereGeometry(0.5, 32, 32);
+const moonTexture = new THREE.TextureLoader().load('8k_moon.jpg');
+const moonMaterial = new THREE.MeshStandardMaterial({
+  map: moonTexture,
+  normalMap:  moonNormal  
 
-// }) 
+}) 
+
+const moon = new THREE.Mesh(moonGeometry, moonMaterial)
+earth.add(moon);
+
+const moonObject = new THREE.Object3D();
+moonObject.add(moon);
+earth.add(moonObject);
+
+// moon.position.setZ(25);
+moon.position.setX(5);
+// moon.position.setY(5);
 
 
+// Mars
+const marsNormal = new THREE.TextureLoader().load('normal.jpg');
+const marsGeometry = new THREE.SphereGeometry(2, 32, 32);
+const marsTexture = new THREE.TextureLoader().load('8k_mars.jpg');
+const marsMaterial = new THREE.MeshStandardMaterial({
+  map: marsTexture,
+  normalMap:  marsNormal  
 
-// const moon = new THREE.Mesh(moonGeometry, moonMaterial)
-// scene.add(moon);
+}) 
+const mars = new THREE.Mesh(marsGeometry, marsMaterial);
+scene.add(mars);
+mars.position.x = -3;
+mars.position.z = 35;
 
-// moon.position.setZ(30);
-// moon.position.setX(-15);
+// Jupiter
+
+const jupiterGeometry = new THREE.SphereGeometry(10, 32, 32);
+const jupiterTexture = new THREE.TextureLoader().load('8k_jupiter.jpg');
+const jupiterMaterial = new THREE.MeshStandardMaterial({
+  map: jupiterTexture,
+   
+
+}) 
+const jupiter = new THREE.Mesh(jupiterGeometry, jupiterMaterial);
+scene.add(jupiter);
+jupiter.position.x = 7;
+jupiter.position.z = 50;
+
+// Saturn
+const saturnGeometry = new THREE.SphereGeometry(8, 32, 32);
+const saturnTexture = new THREE.TextureLoader().load('8k_saturn.jpg');
+const saturnMaterial = new THREE.MeshStandardMaterial({
+  map: saturnTexture,
+   
+
+}) 
+const saturn = new THREE.Mesh(saturnGeometry, saturnMaterial);
+scene.add(saturn);
+saturn.position.x = -11;
+saturn.position.z = 70;
+
+// Borg Cube
+const borgGeometry = new THREE.BoxGeometry(3, 3, 3);
+const borgTexture = new THREE.TextureLoader().load('borg.jpeg');
+const borgMaterial = new THREE.MeshStandardMaterial({
+  map: borgTexture,
+
+}) 
+const borgCube = new THREE.Mesh(borgGeometry, borgMaterial);
+scene.add(borgCube);
+
+borgCube.position.z = 200;
+borgCube.position.y = 5;
+borgCube.position.x = -5
 
 function animate() {
   requestAnimationFrame( animate );
@@ -151,8 +210,14 @@ function animate() {
   // torus.rotation.y += 0.005;
   // torus.rotation.z += 0.01
 
-  controls.update();
+  // moon.position.y += 0.01;
+  // moon.position.z += 0.01
 
+  // controls.update();
+
+  earth.rotateY(0.004);
+  moon.rotateY(0.04);
+  moonObject.rotateY(-0.008);
 }
 animate()
 
