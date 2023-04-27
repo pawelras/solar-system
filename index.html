@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -12,51 +12,105 @@
     <main>
 
       <header>
-        <div class="background"></div>
+        
         <div class="text">
 
           <h1>Solar System</h1>
           <p>🚀 Welcome to my website!</p>
 
         </div>
-        
+       
       </header>
-
-
-      <blockquote>
-        <p>Join me on a journey through the planets</p>
+       
+      <div class="section bg-static ">
+        <div class="bg-move">
+      <blockquote id="intro" style="margin-top: 48vh" >
+        <img class="float" src="img/astronaut.png"/>
+        <div class="float">
+        <p class="">
+        Join me on a journey through the planets
+      </p>
+    </div>
+      
       </blockquote>
+    </div>
+      </div>
 
-      <section class="left float">
-        <h2>Mercury</h2>
+
+      <section class="left float"  style="margin-top: 80vh">
+        <h2 data-splitting>Mercury</h2>
+        
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Mercury is the closest planet to the sun and the smallest planet in our solar system. It has a diameter of about 4,880 kilometers, which is only about 38% the size of Earth. Mercury is a rocky planet with a heavily cratered surface, similar to our Moon. It has no atmosphere to speak of and experiences extreme temperature variations between its day and night sides. During the day, temperatures on Mercury can soar to 430 degrees Celsius (800 degrees Fahrenheit), while at night, temperatures can plummet to -180 degrees Celsius (-290 degrees Fahrenheit).
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
+        <div id="carouselMerucryIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMerucryIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMerucryIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMerucryIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/mercury5a.png"  class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/mercury2a.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/mercury3a.png" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMerucryIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMerucryIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
+
+
+      
+     
 
       <section class="right float">
         <h2>Venus</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Venus is often called Earth's "sister planet" due to its similar size and composition, but there are some major differences between the two. Venus has a diameter of about 12,100 kilometers, making it slightly smaller than Earth. However, it has a very thick atmosphere that traps heat, making it the hottest planet in our solar system. The surface of Venus is rocky and marked by volcanoes, mountains, and vast plains. The thick atmosphere on Venus is composed mainly of carbon dioxide and nitrogen, with clouds of sulfuric acid. The surface temperature on Venus averages around 460 degrees Celsius (860 degrees Fahrenheit), which is hot enough to melt lead.
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselVenusIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselVenusIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselVenusIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselVenusIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/venus1.png"  class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/venus2.webp" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/venus3.jpg" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselVenusIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselVenusIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </section>
 
@@ -68,16 +122,36 @@
         <h2>Earth</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Earth is the third planet from the sun and the only known planet with life. It has a diameter of about 12,742 kilometers, making it the largest of the terrestrial planets. Earth has a diverse atmosphere that supports a wide range of organisms, and its surface is dominated by oceans, continents, and polar ice caps. Earth's atmosphere is composed mainly of nitrogen and oxygen, with trace amounts of other gases. The surface temperature on Earth ranges from -89 degrees Celsius (-128 degrees Fahrenheit) at the South Pole to 58 degrees Celsius (136 degrees Fahrenheit) in the hottest deserts.
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselEarthIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselEarthIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselEarthIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselEarthIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/earth1.png"  class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/earth2.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/earth3.webp" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselEarthIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselEarthIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </section>
 
@@ -88,93 +162,191 @@
         <h2>Mars</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Known as the "Red Planet" due to its rusty appearance, Mars is a cold, dry planet with a thin atmosphere. It has a diameter of about 6,780 kilometers, which is about half the size of Earth. Mars' surface is marked by craters, volcanoes, and deep canyons, including Valles Marineris, which is the largest canyon in the solar system. Mars has two small, irregularly shaped moons, Phobos and Deimos. The atmosphere on Mars is composed mainly of carbon dioxide, with traces of nitrogen and argon. The surface temperature on Mars can range from -143 degrees Celsius (-225 degrees Fahrenheit) at the poles to 35 degrees Celsius (95 degrees Fahrenheit) at the equator.
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselMarsIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselMarsIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselMarsIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselMarsIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/mars1.png"  class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/mars2.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/mars3.webp" height="500px" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselMarsIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselMarsIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </section>
       
-      <blockquote style="margin-top: 60vh;">
+      <blockquote style="margin-top: 100vh;">
         <p>The Gas Giants</p>
       </blockquote>
 
-      <section style="margin-top: 60vh;" class="float">
+      <section style="margin-top: 220vh;" class="float">
         <h2>Jupiter</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Jupiter is the largest planet in our solar system, with a diameter of about 142,984 kilometers, which is more than 11 times the size of Earth. Jupiter is composed mostly of gas and has a thick atmosphere with swirling storms, including the Great Red Spot, a massive storm larger than the size of Earth. Jupiter has many moons, including four large moons known as the Galilean moons: Io, Europa, Ganymede, and Callisto. These moons are some of the most geologically active bodies in the solar system. Jupiter's atmosphere is composed mainly of hydrogen and helium, with trace amounts of other gases. The surface temperature on Jupiter varies depending on the depth within the atmosphere, but the average temperature is around -145 degrees Celsius (-234 degrees Fahrenheit).
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselJupiterIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselJupiterIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselJupiterIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselJupiterIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/jupiter1.png" height="500px"  class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/jupiter2.jpg" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/jupiter3.webp" height="500px" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselJupiterIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselJupiterIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </section>
 
       
-      <section class="right float" style="margin-top: 120vh;">
+      <section class="right float" style="margin-top: 450vh;">
         <h2>Saturn</h2>
 
         
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Known for its beautiful rings, Saturn is the second-largest planet in our solar system, with a diameter of about 120,536 kilometers, which is about nine times the size of Earth. Saturn is composed mainly of gas and has a thick atmosphere with swirling storms, including a hexagonal-shaped storm at its north pole. Saturn also has many moons, including Titan, which is the largest moon in the solar system and the only moon with a thick atmosphere. Saturn's famous rings are composed of icy particles and debris, which orbit around the planet in a flat plane. The atmosphere on Saturn is similar in composition to Jupiter's, with hydrogen and helium being the dominant gases. The surface temperature on Saturn varies depending on the depth within the atmosphere, but the average temperature is around -178 degrees Celsius (-288 degrees Fahrenheit).
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-
+        <div id="carouselSaturnIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSaturnIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselSaturnIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselSaturnIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/saturn1.png" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/saturn2.jpg" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/saturn3.jpg" height="500px" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSaturnIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSaturnIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </section>
       
 
-      <section class="left float">
+      <section class="left float" style="margin-top: 120vh;">
         <h2>Uranus</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Uranus is the seventh planet from the sun and is known for its unique orientation. Unlike the other planets, Uranus spins on its side, with its axis tilted at an angle of 98 degrees. Uranus has a diameter of about 51,118 kilometers, making it about four times the size of Earth. Uranus is composed mainly of gas and has a thick atmosphere that is mostly hydrogen and helium, with traces of methane that give it its blue-green color. Uranus also has a system of rings and 27 known moons. The surface temperature on Uranus is around -224 degrees Celsius (-371 degrees Fahrenheit).
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselUranusIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselUranusIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselUranusIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselUranusIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/uranus1.png" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/uranus2.png" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/uranus3.png" height="500px" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselUranusIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselUranusIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </section>
 
-      <section class="right float">
+      <section class="right float" style="margin-top: 140vh;">
         <h2>Neptune</h2>
 
         
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Neptune is the eighth planet from the sun and is the farthest planet from Earth. It has a diameter of about 49,528 kilometers, making it about four times the size of Earth. Neptune is composed mainly of gas and has a thick atmosphere that is mostly hydrogen and helium, with traces of methane that give it its blue color. Neptune also has a system of rings and 14 known moons. Neptune has the strongest winds of any planet in our solar system, with gusts that can reach over 2,100 kilometers per hour (1,300 miles per hour). The surface temperature on Neptune is around -214 degrees Celsius (-353 degrees Fahrenheit).
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselNeptuneIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselNeptuneIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselNeptuneIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselNeptuneIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/neptune1.png"  height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/neptune2.png" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/neptune3.png" height="500px" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNeptuneIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNeptuneIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
 
       </section>
@@ -184,16 +356,36 @@
         <h2>Pluto</h2>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Pluto is a dwarf planet located in the Kuiper Belt, a region of the solar system beyond the orbit of Neptune. It was discovered in 1930 and was considered the ninth planet in our solar system until it was reclassified as a dwarf planet in 2006. Pluto has a diameter of about 2,377 kilometers, making it only about one-fifth the size of Earth's moon. Pluto is composed mostly of rock and ice, with a surface that is covered in nitrogen, methane, and carbon monoxide ices. It has five known moons, the largest of which is Charon, which is about half the size of Pluto. Pluto has a very eccentric orbit that takes it closer to the sun than Neptune at times, and then farther away than Neptune at other times. The surface temperature on Pluto can range from -240 to -218 degrees Celsius (-400 to -360 degrees Fahrenheit), depending on its distance from the sun
         </p>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div id="carouselPlutoIndicators" class="carousel slide" data-bs-ride="true" max-height="100%">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPlutoIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselPlutoIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselPlutoIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/planets/pluto1.png"  height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/pluto2.jpg" height="500px" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/planets/pluto3.png" height="500px" class="d-block" alt="...">
+            </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselPlutoIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselPlutoIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
       </section>
 
@@ -202,9 +394,13 @@
     </main>
     
 
-
-    
-
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/MotionPathPlugin.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden!important;
+  /* scroll-behavior: smooth!important; */
+ 
 }
 
 canvas {
@@ -47,8 +49,8 @@ canvas {
 
 
   header {
-    background: var(--dark-bg);
-    grid-column: 2 / span 5;
+    /* background: var(--dark-bg); */
+    grid-column: 2 / span 3;
     font-size: 2.5rem;
     padding: 2rem;
     margin-bottom: var(--spacing);
@@ -62,6 +64,7 @@ canvas {
     font-size: 1.25rem;
     line-height: 1.5;
     margin-bottom: var(--spacing);
+    
   }
 
   blockquote {
@@ -72,8 +75,8 @@ canvas {
   }
 
   blockquote p {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
     font-size: 4rem;
     display: inline;
     line-height: 1;
@@ -86,15 +89,15 @@ canvas {
 
   @keyframes float {
     0% {
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
       transform: translatey(0px);
     }
     50% {
-      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
       transform: translatey(-20px);
     }
     100% {
-      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
       transform: translatey(0px);
     }
   }
@@ -103,7 +106,35 @@ canvas {
     animation: float 4s ease-in-out infinite;
   }
 
-  /* ::-webkit-scrollbar {
-    position: fixed;
-    left: 0
-  } */
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    
+}
+
+/* .section {
+  position: relative;
+  max-width: 920px;
+  min-height: 75vh;
+  padding: 40px;
+  margin: auto;
+  color: #ffffff;
+} */
+
+
+/* .section.bg-static {
+   
+  background-size: cover;
+  background-position: center;
+} */
+.section .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  
+  background-size: cover;
+  background-position: center;
+}
